@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guess The Number</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            #wrapper{
+                background-color: rgb(84, 83, 83);
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+                color: white;
+                border: 3px solid gold;
+            }
+            h1{
+                font-size: 1.5rem;
+                font-weight: 700;
+                background: #000;
+            }
+            #guess{
+                font-size: 1.6rem;
+            }
+            #guessField{
+                border: none;
+                width: 200px;
+                height: 30px;
+                background-color: black;
+                border: 2px solid gold;
+                cursor: pointer;
+                transition: border 0.5s;
+                color: white;
+            }
+            #guessField:hover{
+                border: 2px solid rgb(157, 66, 255);
+            }
+            .guessSubmit{
+                background-color: cornflowerblue;
+                border: none;
+                padding: 8px;
+                color: white;
+                font-weight: 500;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.5s;
+            }
+            .guessSubmit:hover{
+                background-color: darkblue;
+                color: white;
+            }
+            .pre-gusses{
+                background-color: chartreuse;
+                padding: 3px;
+                color: black;
+            }
+            .remain{
+                background-color: chartreuse;
+                padding: 3px;
+                color: black;
+            }
+            .remaining{
+                margin-top: 10px;
+            }
+            .pre-gusses{
+                display: inline-block;
+            }
+            .lowOrHi{
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Guessing Number Game</h1>
+            <p>Try to guess a number between 1 to 100.</p>
+            <p>You have 10 attempts to guess the write number.</p>
+
+            <form class="form">
+                <label for="guessField" id="guess">Guess Feild </label>
+                <br>
+                <input type="text" id="guessField" class="guessField" placeholder="Enter Your Gessed Number">
+                <br>
+                <br>
+                <input type="submit" id="subt" value="Submit Guess" class="guessSubmit">
+            </form>
+
+            <div class="result">
+                <p>Privious Guesses: <span class="pre-gusses"></span></p>
+                <p class="remaining">Guesses Remaining: <span class="remain">10</span></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+    </body>
+    <script src="project4.js"></script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Switcher</title>
+        <style>
+            .container {
+                height: 100vh;
+                width: 100vw;
+                text-align: center;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .button {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+                cursor: pointer;
+                border: 2px solid black;
+            }
+            #grey {
+                background-color: grey;
+            }
+            #blue {
+                background-color: blue;
+            }
+            #red {
+                background-color: red;
+            }
+            #green {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Color Switcher</h1>
+
+            <span class="button" id="grey"></span>
+            <span class="button" id="blue"></span>
+            <span class="button" id="red"></span>
+            <span class="button" id="green"></span>
+            <span class="button" id="black"></span>
+
+            <h2>
+                Try clicking one of the color above
+                <span>to change the background color of this line</span>
+            </h2>
+        </div>
+
+        <script src="project1.js"></script>
+    </body>
+</html>

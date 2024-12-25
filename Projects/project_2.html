@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>BMI Calculator</h2>
+
+        <form action="">
+            <label for="weight">Weight (kg):</label>
+            <input type="text" id="weight" name="weight" placeholder="Enter Your Weight">
+            <br><br>
+            <label for="height">Height (cm):</label>
+            <input type="text" id="height" name="height" placeholder="Enter Your Height">
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <br><br>
+            <label for="result">Result:</label>
+            <input type="text" name="result" id="result">
+        </form>
+    </div>
+
+    <script src="project2.js"></script>
+</body>
+</html>
+
